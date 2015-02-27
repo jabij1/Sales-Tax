@@ -1,0 +1,75 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf140
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+Problem Two: Sales Taxes\expnd0\expndtw0\kerning0
+\
+\'a0\
+Basic sales tax is applicable at a rate of 10% on all goods, except books, food, and medical products that are exempt. Import duty is an additional sales tax applicable on all imported goods at a rate of 5%, with no exemptions.\
+\'a0\
+When I purchase items I receive a receipt which lists the name of all the items and their price (including tax), finishing with the total cost of the items, and the total amounts of sales taxes paid. \'a0The rounding rules for sales tax are that for a tax rate of n%, a shelf price of p contains (np/100 rounded up to the nearest 0.05) amount of sales tax.\
+\'a0\
+Write an application that prints out the receipt details for these shopping baskets...\
+\pard\pardeftab720
+
+\i\b \cf0 \expnd0\expndtw0\kerning0
+\
+Input:
+\i0\b0 \expnd0\expndtw0\kerning0
+\
+\'a0\
+Input 1:\
+1 book at 12.49\
+1 music CD at 14.99\
+1 chocolate bar at 0.85\
+\'a0\
+Input 2:\
+1 imported box of chocolates at 10.00\
+1 imported bottle of perfume at 47.50\
+\'a0\
+Input 3:\
+1 imported bottle of perfume at 27.99\
+1 bottle of perfume at 18.99\
+1 packet of headache pills at 9.75\
+1 box of imported chocolates at 11.25\
+\'a0\
+
+\i\b \expnd0\expndtw0\kerning0
+Output:
+\i0\b0 \expnd0\expndtw0\kerning0
+\
+\'a0\
+Output 1:\
+1 book : 12.49\
+1 music CD: 16.49\
+1 chocolate bar: 0.85\
+Sales Taxes: 1.50\
+Total: 29.83\
+\'a0\
+Output 2:\
+1 imported box of chocolates: 10.50\
+1 imported bottle of perfume: 54.65\
+Sales Taxes: 7.65\
+Total: 65.15\
+\'a0\
+Output 3:\
+1 imported bottle of perfume: 32.19\
+1 bottle of perfume: 20.89\
+1 packet of headache pills: 9.75\
+1 imported box of chocolates: 11.85\
+Sales Taxes: 6.70\
+Total: 74.68
+\b \expnd0\expndtw0\kerning0
+\ul \ulc0 \
+\pard\pardeftab720
+
+\b0 \cf0 \ulnone \
+\
+Considering the nature of the sales tax problem (data entry/manipulation), I decided to go the route of console input/output (io stream) rather than text file parsing. My program consists of a Product class (where the product is created, tax is calculated, imported/exempted booleans are assessed, etc), and a Driver class to parse the input and then output the desired data. .java files are included to run the application.\
+\
+Joey\
+}
